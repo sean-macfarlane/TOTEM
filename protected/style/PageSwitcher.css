@@ -1,0 +1,45 @@
+.pageIconsContainer{
+	text-align:left;
+}
+
+.pageIconsContainer span {
+    display: block;
+	font-size: 27px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    color: #2f2f2f;
+    border-radius: 5px;
+	background: rgba(175,175,175,1);
+	background: -moz-linear-gradient(top, rgba(175,175,175,1) 0%, rgba(212,212,212,1) 51%, rgba(210,210,210,1) 94%, rgba(196,196,196,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(175,175,175,1)), color-stop(51%, rgba(212,212,212,1)), color-stop(94%, rgba(210,210,210,1)), color-stop(100%, rgba(196,196,196,1)));
+	background: -webkit-linear-gradient(top, rgba(175,175,175,1) 0%, rgba(212,212,212,1) 51%, rgba(210,210,210,1) 94%, rgba(196,196,196,1) 100%);
+	background: -o-linear-gradient(top, rgba(175,175,175,1) 0%, rgba(212,212,212,1) 51%, rgba(210,210,210,1) 94%, rgba(196,196,196,1) 100%);
+	background: -ms-linear-gradient(top, rgba(175,175,175,1) 0%, rgba(212,212,212,1) 51%, rgba(210,210,210,1) 94%, rgba(196,196,196,1) 100%);
+	background: linear-gradient(to bottom, rgba(175,175,175,1) 0%, rgba(212,212,212,1) 51%, rgba(210,210,210,1) 94%, rgba(196,196,196,1) 100%);
+    transition: all 0.2s;
+}
+
+.pageIconsContainer span:hover {
+	background: #032e6c;
+   	color:white;
+}
+
+.pageIconsContainer .activeButton,.pageIconsContainer .activeButton:hover {
+	background: #032e6c;
+   	color: rgb(255, 144, 86);
+}
+
+#dashboardPage{
+    display:block;
+}
+
+#reportsPage, #adminPage{
+    display:none;    
+    height: 95%;
+}
+
+#settingsPage{
+	display:none;
+}

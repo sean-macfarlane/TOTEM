@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>TOTEM</title>
+
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+	<link href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+	<link href="lib/bootstrap-3.3.5-dist/css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+
+	<script src="lib/jquery-2.1.1/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script src="lib/MongoObjectId/ObjectId.js" type="text/javascript"></script>
+	<script src="lib/bootstrap-3.3.5-dist/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script src="scripts/Login.js?v=1" type="text/javascript"></script>
+	<script src="scripts/Main.js?v=1" type="text/javascript"></script>
+
+	<link href="style/Login.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="customScrollbar">
+	<div id="topContainer">
+		<div id="logo">
+			<span></span>
+			<img src="/images/iblogo.png" />
+		</div>
+	</div>
+	<div id="bottomContainer">
+		<!-- Login and Registration Container -->
+		<div class="container" id="loginContainer">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel panel-login">
+					<!--	<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-6 tabs">
+									<a href="#" class="active" id="login-form-link">
+										<div class="login">LOGIN</div>
+									</a>
+								</div>
+								<div class="col-xs-6 tabs">
+									<a href="#" id="register-form-link">
+										<div class="register">REGISTER</div>
+									</a>
+								</div>
+							</div>
+						</div> -->
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<form id="login-form" action="#" method="post" role="form" style="display: block;">
+										<div class="form-group">
+											<span class="glyphicon glyphicon-user icon"></span><input type="text" name="username" id="login-username" tabindex="1"
+											 class="form-control" placeholder="Username" value="" required>
+										</div>
+										<div class="form-group">
+											<span class="glyphicon glyphicon-lock icon"></span><input type="password" name="password" id="login-password"
+											 tabindex="2" class="form-control" placeholder="Password" required>
+										</div>
+										<div class="col-xs-6 form-group pull-right">
+											<input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Sign In">
+											<p id="forgotPassword">Forgot password?</p>
+										</div>
+										<div class="col-xs-6 form-group pull-right">
+											<p id="loginErrorContainer"></p>
+										</div>
+									</form>
+									<form id="register-form" action="#" method="post" role="form" style="display: none;">
+										<div class="form-group">
+											<span class="glyphicon glyphicon-user icon"></span><input type="text" name="username" id="register-username" tabindex="1"
+											 class="form-control" placeholder="Username" value="" required>
+										</div>
+										<div class="form-group">
+											<span class="glyphicon glyphicon-envelope icon"></span><input type="email" name="email" id="register-email" tabindex="1"
+											 class="form-control" placeholder="Email Address" value="" required>
+										</div>
+										<div class="form-group">
+											<span class="glyphicon glyphicon-globe icon"></span><input type="text" name="organization" id="register-organization"
+											 tabindex="1" class="form-control" placeholder="Organization Name" value="">
+										</div>
+										<div class="form-group">
+											<span class="glyphicon glyphicon-lock icon"></span><input type="password" name="password" id="register-password"
+											 tabindex="2" class="form-control" placeholder="Password" required>
+										</div>
+										<div class="form-group">
+											<span class="glyphicon glyphicon-lock icon"></span><input type="password" name="confirm-password" id="register-confirm-password"
+											 tabindex="2" class="form-control" placeholder="Confirm Password" required>
+										</div>
+										<div class="form-group">
+											<div class="row">
+												<div class="col-sm-6 col-sm-offset-3">
+													<input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+												</div>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Activation Container-->
+		<div class="container" id="activateContainer">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel panel-login">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-12 tabs">
+									<a href="#" class="active">
+										<div class="login">ACTIVATION</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<form id="activation-form" action="#" method="post" role="form" style="display: block;">
+										<div class="form-group">
+											<span class="glyphicon glyphicon-lock icon"></span><input type="text" name="activation-key" id="activation-key"
+											 tabindex="1" class="form-control" placeholder="Activation Key" value="" required>
+										</div>
+										<div class="col-xs-6 form-group pull-right">
+											<input type="submit" name="activation-submit" id="activation-submit" tabindex="4" class="form-control btn btn-login" value="Activate">
+										</div>
+										<p class="message"> <span class="glyphicon glyphicon-info-sign"></span> Before you can login, you must activate your account with the
+											code sent to your email address.</p>
+										<div class="col-xs-6 form-group pull-right">
+											<p id="activationErrorContainer"></p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Password Reset Container-->
+		<div class="container" id="resetPasswordContainer">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					<div class="panel panel-login">
+						<div class="panel-heading">
+							<div class="row">
+								<div class="col-xs-1 tabs">
+									<a href="#" class="active" id="forgot-password-back-button">
+										<div class="login"><span class="glyphicon glyphicon-menu-left"></span></div>
+									</a>
+								</div>
+								<div class="col-xs-11 tabs">
+									<a href="#" class="active">
+										<div class="login">RESET PASSWORD</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="panel-body">
+							<div class="row">
+								<div class="col-lg-12">
+									<form id="reset-password-form" action="#" method="post" role="form" style="display: block;">
+										<div class="form-group">
+											<span class="glyphicon glyphicon-user icon"></span><input type="text" name="username" id="reset-password-username"
+											 tabindex="1" class="form-control" placeholder="Username" value="" required>
+										</div>
+										<div class="form-group">
+											<span class="glyphicon glyphicon-envelope icon"></span><input type="email" name="email" id="reset-password-email"
+											 tabindex="1" class="form-control" placeholder="Email Address" value="" required>
+										</div>
+										<div class="col-xs-6 form-group pull-right">
+											<input type="submit" name="reset-password-submit" id="reset-password-submit" tabindex="4" class="form-control btn btn-login"
+											 value="Reset Password">
+										</div>
+										<p class="message"> <span class="glyphicon glyphicon-info-sign"></span> The new password will be sent to your email address.</p>
+										<div class="col-xs-6 form-group pull-right">
+											<p id="passwordResetErrorContainer"></p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Copyright-->
+		<div id="copyright"></div>
+	</div>
+</body>
+
+</html>

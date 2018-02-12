@@ -1,0 +1,77 @@
+.dynamicTable {
+    width: 100%;
+    font-size: 13px;
+    word-wrap: break-word;
+    table-layout: fixed;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.dynamicTable td {
+    padding: 5px;
+    padding-left: 10px;
+    border-right: 1px solid #d6d3d3;
+}
+
+.dynamicTable th {
+    padding: 5px;
+    min-width: 25px;
+    padding-left: 10px;
+}
+.dynamicTable th:hover {
+    background: rgba(101, 101, 101, 0.33);
+}
+
+.dynamicTable tr {
+    color: #333;
+    border: 1px solid rgb(183, 179, 179);
+    background: rgb(222, 222, 222);
+    transition: all 0.3s;
+}
+
+.dynamicTable tr:first-child {
+    color: #FFFFFF;
+    background: rgb(152, 152, 152);
+}
+
+.dynamicTable tr:not(:first-child):hover {
+    background: rgb(239, 239, 239);
+}
+
+.dynamicTable .cancel {
+    width: 20px;
+    text-align: right;
+}
+.dynamicTable .cancel:hover {
+    background: none;
+}
+
+.dynamicTable .cancelButton {
+    background: none;
+    border: none;
+}
+
+.dynamicTable .cancelButton:hover {
+    color: #d40000;
+}
+
+.dynamicTable .arrowDown {
+    width: 0px;
+    height: 0px;
+    top: 10px;
+    left: 5px;
+    position: relative;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: white transparent transparent transparent;
+}   
+.dynamicTable .arrowUp {
+    width: 0px;
+    height: 0px;
+    top: -10px;
+    left: 5px;
+    position: relative;
+    border-style: solid;
+    border-width: 0 4px 5px 4px;
+    border-color: transparent transparent white transparent;
+}  

@@ -1,0 +1,9 @@
+node_modules/
+totem_error.log
+
+tmp/*
+!tmp/.gitkeep
+
+*.DS_Store
+/.DS_Store
+.DS_Store

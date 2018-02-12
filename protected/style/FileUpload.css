@@ -1,0 +1,150 @@
+.customFileUpload .inputFile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.customFileUpload .btn {
+    font-size: 13px;
+    float: right;
+    color:#dcdcdc;
+    background-color: #013052;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: normal;
+    padding-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.customFileUpload .btn:focus,
+.customFileUpload .btn:hover {
+    background-color: #005490;
+    color: #d4d4d4;
+}
+
+.redButton {
+    font-size: 13px;
+    float: right;
+    color:#dcdcdc;
+    background-color: #bb0707;
+    border-radius: 4px;
+    padding: 5px;
+    padding-left: 20px;
+    font-weight: normal;
+    padding-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.redButton:hover {
+    background-color: #c71d1d;
+    color: #d4d4d4;
+}
+
+.fileTypeSelectorContainer {
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+
+.fileTypeSelectorContainer .label{
+	color: #3c3b3b;
+    font-size: 12px;
+}
+
+.fileTypeSelectorContainer .typeSelectorButton {
+    color: #4a4949;
+    font-size: 13px;
+    border: 1px solid rgba(152, 150, 150, 0.39);
+    background: hsla(0, 0%, 90%, 0.62);
+}
+
+.fileTypeSelectorContainer .typeSelectorButton.active {
+	background: #0a9a0a;
+	color: white;
+}
+
+
+.fileUploadList{
+    font-size: 13px;
+    border: 1px solid rgba(152, 150, 150, 0.39);
+    background: rgba(230, 230, 230, 0.62);
+    display: block;
+    list-style: none;
+    padding: 10px;
+    border-radius: 3px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fileUploadList li {
+    margin: 4px 4px 4px 8px;
+    padding: 2px;
+    border-radius: 2px;
+    border-bottom: 1px solid #bfbebe;;
+}
+
+.fileUploadList li:last-child{
+    border-bottom: none;
+}
+
+.listEntry {
+    display: table;
+    width: 100%;
+}
+
+.listEntry span{
+    display: table-cell;
+    width: 20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+    text-align:center;
+    word-break: break-all;
+}
+
+.listEntry span:first-child{
+    text-align: left;
+}
+
+.listEntry span:last-child{
+    text-align: right;
+}
+
+
+.listEntry .loader{
+    height: 18px;
+    position: relative;
+    font-size: 18px;
+}
+
+.listEntry .red{
+    color: #de0101;
+}
+.listEntry .green{
+    color: green;
+}
+
+@keyframes fileUploadSpinner {
+    to {transform: rotate(360deg);}
+}
+ 
+.listEntry .spinner:before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    margin-left: -20px;
+    border-radius: 50%;
+    border: 2px solid #507bbb;
+    border-top-color: #efefef;
+    animation: fileUploadSpinner .8s linear infinite;
+}

@@ -1,0 +1,11 @@
+LIBRARY MODIFICATIONS
+_____________________
+
+
+lineHeight||1.15
+
+changed to 
+
+lineHeight||0.1*C
+
+to be able to have a variable line height based on the font size.

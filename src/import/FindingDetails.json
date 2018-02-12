@@ -1,0 +1,158 @@
+{
+    "bannedEmailDomains": [
+        "gmail.com",
+        "hotmail.com",
+        "googlemail.com",
+        "outlook.com",
+        "live.com",
+        "yahoo.com",
+        "mail.com",
+        "mailinator.com"
+    ], 
+    "1": {
+        "finding": "Configuration file does not contain any data on Web Services.",
+        "severity": "Critical"
+    },
+    "2": {
+        "finding": "Configuration file does not contain any data on User Accounts.",
+        "severity": "Critical"
+    },
+    "98": {
+        "finding": "A user discovered.",
+        "severity": "Info"
+    },
+    "99": {
+        "finding": "No performed system backups found in the configuration file.",
+        "severity": "Low",
+        "info": "requires at least one system backup to be done within the last 6 months."
+    }, 
+    "100": {
+        "finding": "The last system backup is older than 6 months.",
+        "severity": "Low",
+        "info": "requires the last system backup to be done within the last 6 months."
+    },
+    "110": {
+        "finding": "Banned domain found in ReportService/EmailRotator tech email.",
+        "severity": "Medium"
+    },
+    "111": {
+        "finding": "Default User Prototype permission is Admin.",
+        "severity": "Critical"
+    },
+    "113": {
+        "finding": "User has no email password.",
+        "severity": "High"
+    },
+    "114": {
+        "finding": "Banned domain found in ReportService/PrimaryEmail email.",
+        "severity": "Medium"
+    },
+    "115": {
+        "finding": "Banned domain found in ReportService/EmailRotator email.",
+        "severity": "Medium"
+    },
+    "116": {
+        "finding": "Banned domain found in AlarmService/EmailRecipient email.",
+        "severity": "Medium"
+    },
+    "117": {
+        "finding": "Banned domain found in AlarmService/EmailRecipient1 email.",
+        "severity": "Medium"
+    },
+    "118": {
+        "finding": "Banned domain found in AlarmService/EscalationEmail email.",
+        "severity": "Medium"
+    },
+    "119": {
+        "finding": "Banned domain found in AlarmService/PrimaryEmail email.",
+        "severity": "Medium"
+    },
+    "120": {
+        "finding": "Banned domain found in AlarmService/EmailRotator email.",
+        "severity": "Medium"
+    },
+    "121": {
+        "finding": "Banned domain found in AlarmService/EmailRotator tech email.",
+        "severity": "Medium"
+    },
+    "122": {
+        "finding": "Banned email domain is being used by this user.",
+        "severity": "Medium",
+        "info": "does not accept an email address provided by a free email service (e.g. hotmail.com, gmail.com, yahoo.com, etc.)."
+    },
+    "129": {
+        "finding": "HTTP Tunneling is enabled.",
+        "severity": "High"
+    },
+    "130": {
+        "finding": "Proxy Authentication when tunneling is enabled.",
+        "severity": "Very High"
+    },
+    "131": {
+        "finding": "User account for this user cannot be locked out.",
+        "severity": "Very High",
+        "info": "requires all accounts to lock out in order to protect against brute force password cracking attempts."
+    },
+    "132": {
+        "finding": "Password expiration is not configured for this user.",
+        "severity": "Very High",
+        "info": "requires passwords to expire within 90 days."
+    },
+    "11112": {
+        "finding": "User has no password.",
+        "severity": "Very High",
+        "info": "requires that all users have a strong password set."
+    },
+
+
+
+
+
+    "22200": {
+        "finding": "Configuration file does not contain any data.",
+        "severity": "Critical"
+    },
+    "22201": {
+        "finding": "Configuration file does not contain any user data.",
+        "severity": "Critical"
+    },
+    "22202": {
+        "finding": "Configuration file does not contain any account policy data.",
+        "severity": "Critical"
+    },
+    "22221": {
+        "finding": "Last password reset for this user was over 90 days ago.",
+        "severity": "High",
+        "info": "requires all user passwords to be reset within 90 days."
+    },
+    "22222": {
+        "finding": "Banned email domain is being used by this user.",
+        "severity": "Medium",
+        "info": "does not accept an email address provided by a free email service (e.g. hotmail.com, gmail.com, yahoo.com, etc.)."
+    },
+    "22223": {
+        "finding": "Password for this user is set to never expire.",
+        "severity": "Very High",
+        "info": "requires passwords to expire within 90 days."
+    },
+    "22224": {
+        "finding": "Passwords will not expire after 90 days.",
+        "severity": "High",
+        "info": "requires passwords to expire within 90 days."
+    },
+    "22225": {
+        "finding": "User is permitted to reuse any old password.",
+        "severity": "High",
+        "info": "requires new passwords to be unique from any of the previous 5 passwords of the user."
+    },
+    "22226": {
+        "finding": "User account for this user cannot be locked out.",
+        "severity": "Very High",
+        "info": "requires all accounts, other than the default MetasysSysAgent account, to lock out after a maximum of 10 incorrect login attempts."
+    },
+    "22227": {
+        "finding": "Device policy allows for passwords which are less than 8 characters in length.",
+        "severity": "Very High",
+        "info": "requires all passwords to be at least 8 characters in length."
+    }                        
+}

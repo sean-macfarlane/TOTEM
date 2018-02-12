@@ -1,0 +1,32 @@
+{
+	"cover": {
+		"header": "CYBER ASSESSMENT REPORT",
+		"subHeader": "Prepared By",
+		"organization": "Intelligent Buildings, LLC"
+	},
+	"header": {
+		"x": "y"
+	},
+	"footer": {
+		"left": "Intelligent Buildings, LLC. All Rights Reserved",
+		"right": "Cyber Assessment Deliverable"
+	},
+	"tableOfContents": {
+		"header": "TABLE OF CONTENTS",
+		"sideBar": {
+			"h1": "ABOUT INTELLIGENT BUILDINGS",
+			"p1": "Intelligent Buildings, LLC (IB) is a Smart Real Estate professional services company. We provide planning and implementation management of next generation strategy for new building projects, existing portfolio optimization and smart community development.\n\nWe are a recognized thought leader with numerous industry firsts including consultation on the award-winning 'Smartest Building in America', conception and development of a Clinton Global Initiative public-private partnership, program management for the largest energy analytics project in North America and development of national smart building standards for both the US and Canadian federal governments.",
+			"h2": "PROJECT DESCRIPTION"
+		}
+	},
+	"executiveSummary": {
+		"header": "EXECUTIVE SUMMARY",
+		"main": {
+			"h1":"ENGAGEMENT BACKGROUND",
+			"h2":"SUMMARY"
+		}
+	},
+	"auditFindings": {
+		"header": "AUDIT FINDINGS"
+	}
+}

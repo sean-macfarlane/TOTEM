@@ -1,0 +1,9 @@
+node_modules
+totem_error.log
+
+build
+
+sample_files
+
+tmp/*
+!tmp/.gitkeep

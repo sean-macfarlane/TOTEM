@@ -1,0 +1,206 @@
+.sourceListElement{
+    width: 100%;
+    padding: 10px;
+} 
+
+.sourceListElement .panel-heading {
+    padding: 10px;
+}
+
+.sourceListElement .panel-title{
+    font-size: 13px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+.sourceListElement .indicator{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 2px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px ridge #d2d2d2;
+}
+
+.sourceListElement .passed{
+    background: lime;
+}
+
+.sourceListElement .failed{
+    background: #d22626;
+}
+.sourceListElement .buttonContainer{
+    position:relative;
+    margin-top: -20px;
+    float: right;
+}
+
+.sourceListElement .buttonContainer .button{
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+    color: #4e4e4e;
+}
+.sourceListElement .button:hover{
+    color: #000000;
+}
+
+.sourceListElement .buttonContainer .success {
+    color: green;
+}
+
+.sourceListElement .buttonContainer .error {
+    color: #d22626;
+}
+
+.sourceListElement .buttonContainer .processing {
+    opacity: 0.4;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    pointer-events: none;
+}
+
+.deviceList {
+	list-style: none;
+    columns: 3;
+   -webkit-columns: 3;
+   -moz-columns: 3;
+}
+
+.deviceList li {
+	padding: 2px;
+}
+
+.allFindingsContainer{
+    padding: 20px;
+    background: rgba(128, 128, 128, 0.08);
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.allFindingsContainer .finding{
+    border-bottom: 1px dashed gray;
+    margin: 10px;
+    padding: 10px;
+    line-height: 16px;
+}
+.allFindingsContainer .finding:hover{
+    background: rgba(128, 128, 128, 0.05);
+    border-radius: 4px;
+}
+
+.allFindingsContainer .finding:last-child{
+    border-bottom:none;
+}
+
+.allFindingsContainer .mainHeader{
+    font-size:16px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #061c3a;
+}
+
+.specificFindings{
+    padding: 15px;
+    border-radius: 4px;
+    background: rgba(220, 217, 217, 0.25);
+    margin: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.08);
+    margin-top: 10px;
+}
+
+.specificFindings .heading{
+    font-size:15px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #0b3873;
+}
+
+.specificFindings .userType {
+    font-weight: bold;
+    margin: 10px;
+    color: #0d0d8c;
+}
+
+.specificFindings .userFinding {
+    margin-left: 20px;
+}
+
+.sourceSummary{
+    padding: 20px;
+    margin-bottom: 15px;
+    background: rgba(128, 128, 128, 0.08);
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+}
+
+.sourceSummary .failed{
+    color:#d22626;
+}
+
+.sourceSummary .passed{
+    color:green;
+}
+
+#rightContainerReports .panel, #rightContainerReports .panel-group {
+    height: 100%;
+}
+
+#leftContainerReports, #leftContainerUsers {
+    height: 100%;
+    width: 25%;
+    float: left;
+    padding: 20px;
+    margin: 0px;
+    border-right: 2px solid rgba(189, 189, 189, 0.72);
+}
+
+#rightContainerReports, #rightContainerUsers {
+    height: 100%;
+    width: 75%;
+    float: right;
+    padding-top: 4px;
+    padding-left: 0px;
+    padding-bottom: 4px;
+    padding-right: 0px;
+    margin: 0px;
+}
+
+div.treeContainer {
+    width: 100%;
+    padding: 4px;
+    overflow: auto;
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 50px;
+}
+
+#createOrgButton, #createOrgButton label, #createUserButton, #createUserButton label {
+    cursor: pointer;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+#chartsContainer .chartContainer {
+    display: inline-block;
+    width: 50%;
+}
+
+#chartsContainer .panel-title {
+    padding: 10px;
+    color: #fff;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+#chartsContainer .panel-heading {
+    padding: 0px;
+}

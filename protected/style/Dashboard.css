@@ -1,0 +1,129 @@
+.dashboardWidget{
+	min-height:125px;
+}
+
+#dashboardContainer {
+	min-height: 180px;
+}
+
+.chartContainer{
+	min-height:250px;
+	padding:15px;
+    height: 100%;
+}
+
+.noFindings{
+	text-align: center;
+	padding:60px;
+}
+.noFindings .addSources{
+	color:#0909b9;
+	text-decoration: underline;
+	cursor: pointer;
+}
+.noFindings .addSources:hover{
+	color:#001379;
+}
+
+.dashboardSelector {
+    width: 45%;
+    height: 30px;
+    padding: 5px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #efeeee;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.organizationBox .header{
+	background: #cdd6e4;
+}
+
+.organizationRiskScoreContainer {
+	padding: 40px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.organizationRiskScoreContainer canvas{
+	width: 100%;
+    height:100%;
+}
+
+.selectorContainer {
+	display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:flex;
+    -webkit-justify-content:space-around;
+    -moz-justify-content:space-around;
+    -ms-justify-content:space-around;
+    justify-content:space-around;
+}
+
+.organizationInformationContainer {
+	line-height: 6px;
+    position: absolute;
+    margin: 4px;
+    font-size: 11px;
+    color: #5a5a5a;
+    font-weight: bold;
+}
+
+.facilityRiskTable {
+	width: 100%;
+	list-style-type: none;
+    margin: 5px;
+   	text-align: center;
+    padding: 0px;
+}
+
+.facilityRiskTable td {
+	padding: 2px;
+}
+
+.facilityRiskTable tr {
+    line-height: 17px;
+    font-size: 13px;
+}
+
+.facilityRiskTable tr:hover{
+    background: #e0e0e0;
+}
+
+.facilityRiskTable tr:first-child{
+    font-weight:bold;
+	border-bottom: 1px solid rgba(4, 4, 4, 0.1);
+}
+
+.facilityRiskTable tr:first-child:hover{
+    background: none;
+}
+
+.facilityRiskTable tr .name{
+	text-align: left;
+    width: 33%;
+    vertical-align: middle;
+}
+
+.facilityRiskTable tr .score{
+    width: 33%;
+    vertical-align: middle;
+}
+
+.facilityRiskTable tr .severity{
+    width: 33%;
+    font-weight: bold;
+    vertical-align: middle;
+}

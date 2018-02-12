@@ -1,0 +1,20 @@
+{
+  "version": "1.0.5",
+  "name": "TOTEM",
+  "applicationName": "Totem",
+  "company": "Intelligent Buildings",
+  "passwordHashSecret": "3cb7f6cc-f0e7-d5da-8614-07fa42dd80f8",
+  "cryptoSecret": "YBCe4fd1Ymzertuwqs8pKcvzXmJyiOUW",
+  "email": {
+    "host": "smtp.zoho.com",
+    "port": 465,
+    "secure": true,
+    "username": "totem.cybernetiq@zoho.com",
+    "password": "Totem5314#"
+  },
+  "admin": {
+    "username": "admin",
+    "email": "totem.cybernetiq@zoho.com",
+    "password": "ibtotem9821"
+  }
+}
