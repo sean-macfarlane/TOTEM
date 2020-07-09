@@ -1,4 +1,4 @@
-# TOTEM
+# TOTEM: Risk Assessment Tool
 
 ## Prerequisites
 
